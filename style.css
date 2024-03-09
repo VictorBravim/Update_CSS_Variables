@@ -1,0 +1,47 @@
+:root {
+    --base: #ff0024;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    background: #131313;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    -webkit-filter: blur(var(--blur));
+    filter: blur(var(--blur));
+}
+
+.controls {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.controls label {
+    margin-bottom: 2%px;
+}
+
+a {
+    color: #ff0024;
+    text-decoration: none;
+}
+
+input {
+    width: 100px;
+}
